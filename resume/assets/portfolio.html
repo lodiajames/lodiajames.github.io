@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--==================== UNICONS ====================-->
+        
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="./css/porfolio.css">
+         <link rel="stylesheet" href="css/styles.css">
+        <title>ibrahimadiallo.com</title>
+           
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script src="js/main.js"></script>
+    
+      
+    </head>
+    <body>
+
+        <header class="header" id="header">
+            <nav class="nav container">
+                
+                <a href="../index.html" class="nav__logo"><span class="D_letter">D</span><span class="i_letter">i</span><span class="a_letter">a</span><span class="l_letter">l</span><span class="l2_letter">l</span><span class="o_letter">o</span>                              </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item btn1">
+                            <a href="../index.html" class="nav__link">
+                                <i class="uil uil-estate nav__icon"></i>
+                              Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link active-link">
+                                <!-- <i class="uil uil-user nav__icon"></i> -->
+                                Portfolio
+                            </a>
+                        </li>
+                        
+                        <li class="nav__item">
+                        <a href="#resume" class="nav__link">
+                          <i class="fa fa-arrow-down"></i>Resume 
+                          </a>
+                      </li>
+                  
+                      
+                    </ul>
+                    
+                   <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+                
+                <div class="nav__btns"onclick="myFunction()" >
+                     <!-- Theme change button -->
+                    <i class="uil uil-moon change-theme" id="theme-button" onclick="myfunction()"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+
+            </nav>
+        </header>
+
+
+
+      <div class="portf"><h2>PORTFOLIO</h2></div>  
+        <div id="myBtnContainer" class="show-all">
+          <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+          <button class="btn" onclick="filterSelection('nature')">Application</button>
+          <button class="btn" onclick="filterSelection('cars')">UI/UX Design</button>
+          <button class="btn" onclick="filterSelection('people')"> Data Analysis</button>
+        </div>
+        
+        <!-- Portfolio Gallery Grid -->
+     
+<!-- Portfolio Gallery Grid -->
+<div class="row ">
+    <div class="column nature">
+      <div class="content container">
+       <img src="./img/coffee.jpg" class="image" alt="Mountains" style="width:100%">
+       <a href="https://lodiajames.github.io/coffee/" target="_blank"> 
+       <div class='overlay'>  
+        <h4 class="text">Coffee Shop</h4>
+        <p class="text2">Beautiful coffee shop with multiple users interfaces 
+          and devices adaptability.
+          The design is mainly focused Implementing ecommerce elements with a smooth interactions.
+         
+        </p>
+       </div>
+       </a>
+      
+      </div>
+    </div>
+    <div class="column nature">
+      <div class="content container">
+          <img src="./img/math2.jpg" class="image fit" alt="Lights" style="width:100%">
+          <a href="https://lodiajames.github.io/sprintgame/" target="_blank">
+       <div class="overlay">
+        <h4 class="text">Math Game</h4>
+        <p class="text2">A simple game application that performs calculations such as addition, subtraction, multiplication and division. 
+          It uses a series of questions or problems to ask the user what they think is the correct answer.
+        Users can play while enhancing mental calculation skills</p>
+        </div>
+      </a>
+      </div>
+    </div>
+    <div class="column nature">
+      <div class="content container">
+        <img src="./img/forest.jpg" alt="Nature" style="width:100%" class="image fit">
+         <a href="https://lodiajames.github.io/infinityscroll/" target="_blank">
+      <div class="overlay">
+        <h4 class="text">Infinity Scroll</h4>
+        <p class="text2">Small but strong application, mimicking instagram scroll effects.
+          I used unsplash api to generate an infinite number of photos.
+        </p>
+    </div>
+     </a>
+      </div>
+    </div>
+    <!--  -->
+    <div class="column nature">
+      <div class="content container">
+         <img src="./img/astronaut.jpg" alt="Nature" style="width:100%" class="image fit">
+            <a href="https://lodiajames.github.io/nasapi/" target="_blank">
+      <div class="overlay">   
+     
+        <h4 class="text">Nasa API</h4>
+        <p class="text2">The NASA API application is a tool that allows you to access different NASA data sets.
+           It has many different functions, such as accessing images and other media files.
+         The API also provides information about the location of satellites and spacecrafts, as well as their orbits and status.</p>
+    </div>
+     </a>
+      </div>
+    </div>
+    <div class="column nature">
+      <div class="content container">
+      <img src="./img/drawing.jpg" alt="Nature" style="width:100%" class="image fit">
+      <a href="https://lodiajames.github.io/drawingapp/" target="_blank"> 
+      <div class="overlay">
+        <h4 class="text">Drawing App</h4>
+        <p class="text2">It's an application that actually helped draw or sketch simple illustration with a pencil or paintbrush—and other tools.</p>
+    </div>
+  </a>
+      </div>
+    </div>
+    <div class="column nature">
+      <div class="content container">
+         <img src="./img/photo.jpg" alt="Nature" style="width:100%" class="image">
+         <a href="https://lodiajames.github.io/photogenerator/" target="_blank"> 
+      <div class="overlay">
+        <h4 class="text">Photogenerator</h4>
+        <p class="text2">It is a form of application that allows people to view new trended images and the ability to share them. 
+          It's an incredibly powerful medium, and i am committed to explore further utilities in order to expand the performance.</p>
+    </div>
+         </a> 
+      </div>
+    </div>
+
+
+        
+          <div class="column cars">
+            <div class="content container">
+             <img  class='image fit'src="./img/food.png" alt="Car" style="width:100%">
+              <div class="overlay">
+              <h4 class="text">Food Ordering App</h4>
+              <p class="text2">This is a part of my food ordering application design. With different kits available.
+                
+              </p>
+            </div>
+            </div>
+          </div>
+          <div class="column cars">
+            <div class="content container">
+              <a href=""> <img src="./img/educational.png" class=" image fit" alt="Car" style="width:100%">
+              <div class="overlay">
+              <h4 class="text">Tutoring App</h4>
+              <p class="text2">This is a fully educational website design, with multiple users interfaces and different pages.
+                Users can choose teachers and time available. Multiple platforms are integrated in order to have a better users experience
+
+              </p>
+            </div>
+            </div>
+          </div>
+          <div class="column cars">
+            <div class="content container">
+              <img src="./img/tutoringapp.png" class="image fit" alt="Car" style="width:100%"></a>
+              <div class="overlay">
+              <h4 class="text">Classic App</h4>
+              <p class="text2">Mobile application designed for students and teachers. I am passionated to learning and enforce my knowledge. Many people share the same.So it is very useful to design a platform to help student and teacher to connect remotely. This can ease users for their educational matters</p>
+            </div>
+            </div>
+          </div>
+        
+          <div class="column people">
+            <div class="content container">
+             <img src="./img/data.jpg" class="image fit" alt="People" style="width:100%">
+              <a href="https://tinyurl.com/2bec4cec" target="_blank"> 
+              <div class="overlay">
+              <h4 class="text">Spacex Analysis</h4>
+              <p class="text2">Lorem ipsum dolor..</p>
+            </div>
+          </a>
+            </div>
+          </div>
+          <div class="column people">
+            <div class="content container">
+              <a src="">  <img class="image fit" src="./img/comingsoon2.jpg" alt="People" style="width:100%"></a>
+              <div class="overlay">
+              <h4 class="text">lady</h4>
+              <p class="text2">Lorem ipsum dolor..</p>
+            </div>
+            </div>
+          </div>
+         <div class="column people">
+            <div class="content container">
+              <a src="">  <img class=" image fit" src="./img/comingsoon.jpg" alt="People" style="width:100%">
+              <div class="overlay">
+              <h4 class="text">women</h4>
+              <p class="text2">Lorem ipsum dolor..</p>
+            </div>
+            </div>
+            
+          </div>
+        <!-- END GRID -->
+        </div>
+        <section class="resume">
+
+
+        </section>
+         <!--==================== FOOTER ====================-->
+         <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Ibrahima</h1>
+                        <span class="footer__subtitle">Developer & Data Analyst</span>
+                    </div>
+                     <ul class="footer__links">
+                         <li>
+                             <a href="#services" class="footer__link">Services</a>
+                         </li>
+                         <li>
+                            <a href="#portfolio" class="footer__link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer__link">Contactme</a>
+                        </li>
+                     </ul>
+                      <div class="footer__socials">
+                          <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                            <i class="uil uil-facebook-f"></i>
+                          </a>
+                          <a href="https://www.instagram.com/" class="footer__social">
+                            <i class="uil uil-instagram" target="_blank"></i>
+                        </a>
+                        <a href="https://twitter.com/" class="footer__social">
+                            <i class="uil uil-twitter-alt" target="_blank"></i>
+                        </a>
+                      </div>
+                </div>
+                <p class="footer__copy">&#169; Diallo All right reserved</p>
+             
+            </div>
+          
+             
+        </footer>
+        
+        <!--==================== SCROLL TOP ====================-->
+         <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scroll__icon"></i>
+         </a>
+
+        <!--==================== SWIPER JS ====================-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    
+        <script src="./js/porfolio.js"></script>
+        <script>
+
+        </script>
+    </body>
+    </html>
+    
