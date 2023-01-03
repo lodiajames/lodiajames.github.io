@@ -534,6 +534,7 @@ img {
      
 }
 
+
 @media screen and (min-width: 768px){
   .container{
      margin-left: auto;
@@ -614,6 +615,10 @@ img {
   }
   .fit{
     height: 320px;
+ 
+  }
+  .fit2{
+   height: 320px;
   }
   
   .overlay {
